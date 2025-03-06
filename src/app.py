@@ -58,7 +58,7 @@ def home():
     
     return response_data
 
-@app.route('/api/query', methods=['GET'])
+@app.route('/api/query', methods=['POST'])
 def query_process():
     # Endpoint to process the query of the user
     start_time = time.time()
